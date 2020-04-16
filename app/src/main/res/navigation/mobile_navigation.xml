@@ -5,23 +5,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_allQuotes">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_liked"
         android:name="com.example.indiviual_3.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_like" />
+        tools:layout="@layout/fragment_liked" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.indiviual_3.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_change" />
+        tools:layout="@layout/fragment_allquotes"
+        />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.indiviual_3.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_share" />
+        tools:layout="@layout/fragment_music" />
 </navigation>
